@@ -389,7 +389,7 @@ endforeach()
 foreach(NOT_COVERED_SRC ${COVERAGE_SRCS_REMAINING})
 
 	# Loads the source file as a list of lines.
-	file(STRINGS ${NOT_COVERED_SRC} SRC_LINES)
+	file(STRINGS ${PROJECT_ROOT}/${NOT_COVERED_SRC} SRC_LINES)
 
 	set(GCOV_FILE_COVERAGE "[")
 	set(GCOV_FILE_SOURCE "")
